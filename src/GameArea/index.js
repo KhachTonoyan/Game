@@ -26,12 +26,12 @@ export default ({gameMode,userWin,compWin}) => {
     if(player > count/2){
         clear();
         userWin(gameMode.name);
-        return <div className={"gameArea"}>{gameMode.name} win</div>;
+        return;
     }
     if(AI > count/2){
         clear();
         compWin();
-        return <div className={"gameArea"}>Computer win</div>;
+        return;
     }
     random = Math.round(Math.random() * count);
     while (items[random]){
