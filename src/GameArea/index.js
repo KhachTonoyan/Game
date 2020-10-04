@@ -26,7 +26,6 @@ export default ({gameMode,userWin,compWin}) => {
     if(player > count/2){
         clear();
         userWin(gameMode.name);
-        console.log("a")
         return <div className={"gameArea"}>{gameMode.name} win</div>;
     }
     if(AI > count/2){
